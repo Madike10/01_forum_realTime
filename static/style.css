@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #1509c7;
+  --secondary-color: #5999e7;
+  --tertiary-color: #f3f0f0a1;
+    --firstcolor: #ff886c;
+  --secondcolor: #ffb477;
+  --black: #2d2729;
+  --whitecolor: #fff;
+  --other: #eff2f5;
+  --other2: #ffebe3;  --firstcolor: #ff886c;
+  --secondcolor: #ffb477;
+  --black: #2d2729;
+  --whitecolor: #fff;
+  --other: #eff2f5;
+  --other2: #ffebe3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body, .app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  row-gap: 2%;
+}
+.header {
+  height: 60px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+#user_session {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  
+}
+.tools {
+   text-align: center;
+}
+
+.logo {
+  width: 100px;
+}
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__input input {
+  width: 40vw;
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+.btn__logOut{
+  background: none;
+  border: none;
+  font-size: 150%;
+  color: blue;
+}
+.post-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.post-buttons button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.header__input form {
+  display: flex;
+  gap: 10px;
+}
+.search_input {
+  width: 100%;
+  height: 100%;
+}
+.containerHomepage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2%;
+  /* background-color: aqua; */
+}
+.sidebarRow {
+  display: flex;
+  height: 60px;
+  column-gap: 10px;
+  align-items: center;
+  color: black;
+  margin-left: 15px;
+}
+
+/* sidebar-left */
+
+.sidebar-left {
+  width: 20%;
+  height: 100%;
+  border-radius: 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border-radius: 15px; */
+  /* background-color: rgb(224, 219, 219); */
+}
+.online-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+a {
+  text-decoration: none;
+}
+/* .sidebar__post {
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+} */
+.middle, .ibg {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:white;
+  /* overflow: scroll; */
+}
+.ibg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* row-gap: 5%; */
+  /* background: rgb(181, 23, 23); */
+  overflow: scroll;
+}
+.categorie {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-content: center;
+  z-index: auto;
+  align-items: center;
+}
+.categorie a {
+  font-size: 100%;
+  text-decoration: none;
+  padding: 15px;
+  /* background: rgb(236, 230, 230); */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 15px;
+  border-radius: 50px;
+  width: 10%;
+  text-align: center;
+  color: black;
+}
+.categorie a:hover {
+  background: rgba(0, 0, 255, 0.397);
+}
+.sidebar-right {
+  width: 20%;
+  height: 100%;
+  border-radius: 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Post style  */
+.Post,#chat-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 20px;
+  padding: 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* background: rgb(161, 23, 23); */
+}
+.header-post {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  align-items: center;
+}
+.header-post-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.contain-post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.post-img {
+  width: 50%;
+}
+.contain-post-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.post__options {
+  padding-top: 10px;
+  /* border-top: 1px solid lightgray; */
+  display: flex;
+  margin-left: 80%;
+  gap: 10%;
+  padding: 15px;
+}
+.post__option p {
+  border: none;
+  background-color: none;  
+  margin-left: 10px;
+}
+/* partie des element de messqge  */
+#chat-container {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+#info-receiver {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#message-zone {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+#msg-sender {
+  display: flex;
+  width: auto;
+  background-color: #f5f5f5;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#msg-receiver {
+  width: auto;
+  background-color: #e0e0e0;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#make-msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#make-msg input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+#make-msg button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#make-msg button:hover {
+  background-color: #45a049;
+}
+
+
+@media screen {
+  @media only screen and (max-width: 900px) {
+    .containerHomepage {
+      flex-direction: column;
+    }
+    .sidebar-left {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    .middle {
+      width: 100%;
+    }
+    .sidebar-right {
+      width: 100%;
+    }
+    .post__options {
+      margin-left: 75%;
+      font-size: 100px;
+      gap: 15px;
+    }
+  }
+}

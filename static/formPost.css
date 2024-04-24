@@ -1,0 +1,83 @@
+/* Updated CSS styles for a larger and more colorful design */
+.feed {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.messageSender {
+  margin-bottom: 20px;
+}
+.messageSender__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.messageSender__input {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+textarea {
+  width:57%;
+  overflow: hidden;
+  background-color: #FFF;
+  color: #222;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: 24px;
+  resize: none;
+  line-height: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 45px;
+  padding-bottom: 34px;
+  background-image: url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+  background-repeat: repeat-y, repeat;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 14px #000;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  height: 200px;
+}
+.checkbox__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.category {
+  margin: 10px;
+  cursor: pointer;
+}
+.messageSender__bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.material-icons {
+  font-size: 28px;
+  color: #007bff;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+.title {
+  margin: 10px;
+}
+.thetitle {
+  font-size: 22px;
+}
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+  .feed {
+      max-width: 100%;
+  }
+  textarea {
+      width: 57%;
+  }
+}
